@@ -2,4 +2,6 @@ include ':apt_library'
 include ':apt_compiler'
 include ':apt_annotation'
 include ':app'
-rootProject.name = "app"
+include ':app2'
+include ':lib_reflection'
+rootProject.name = "MyButterknife"

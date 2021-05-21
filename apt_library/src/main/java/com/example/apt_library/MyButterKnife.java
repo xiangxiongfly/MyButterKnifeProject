@@ -7,7 +7,7 @@ import java.lang.reflect.Constructor;
 public class MyButterKnife {
     public static void bind(Activity activity) {
         Class<?> aClass = activity.getClass();
-        String binderName = aClass.getName() + "_ViewBinding";
+        String binderName = aClass.getName() + "ViewBinding";
         try {
             Class<?> viewBinderClz = Class.forName(binderName);
             Constructor<?> constructor = viewBinderClz.getConstructor(activity.getClass());
