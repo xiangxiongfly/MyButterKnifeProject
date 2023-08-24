@@ -6,10 +6,14 @@ import java.lang.reflect.Constructor;
 
 public class MyButterKnife {
     public static void bind(Activity activity) {
-        Class<?> aClass = activity.getClass();
-        String binderName = aClass.getName() + "ViewBinding";
+        //获取Activity的Class
+        Class<?> clz = activity.getClass();
+        //拼接获取ViewBinding的类型
+        String className = clz.getName() + "_ViewBinding";
         try {
-            Class<?> viewBinderClz = Class.forName(binderName);
+            //获取ViewBinding的Class
+            Class<?> viewBinderClz = Class.forName(className);
+            //通过反射构造函数创建
             Constructor<?> constructor = viewBinderClz.getConstructor(activity.getClass());
             constructor.newInstance(activity);
         } catch (Exception e) {

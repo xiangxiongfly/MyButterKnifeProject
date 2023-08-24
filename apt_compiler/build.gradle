@@ -12,11 +12,11 @@ dependencies {
 
     //编译时期进行注解处理
     annotationProcessor 'com.google.auto.service:auto-service:1.0-rc4'
+    //noinspection AnnotationProcessorOnCompilePath
     compileOnly 'com.google.auto.service:auto-service:1.0-rc4'
 
     //生成Java代码
     implementation 'com.squareup:javapoet:1.10.0'
-
     // 依赖于注解
     implementation project(':apt_annotation')
 }

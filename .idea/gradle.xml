@@ -11,8 +11,9 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
-            <option value="$PROJECT_DIR$/app" />
-            <option value="$PROJECT_DIR$/app2" />
+            <option value="$PROJECT_DIR$/annotation_demo" />
+            <option value="$PROJECT_DIR$/app_apt" />
+            <option value="$PROJECT_DIR$/app_reflection" />
             <option value="$PROJECT_DIR$/apt_annotation" />
             <option value="$PROJECT_DIR$/apt_compiler" />
             <option value="$PROJECT_DIR$/apt_library" />
