@@ -73,10 +73,10 @@ public class MyButterKnife {
                     if (annotationType.isAnnotationPresent(EventType.class)) {
                         //获取EventType注解
                         EventType eventType = annotationType.getAnnotation(EventType.class);
-                        //获取事件类的Class
                         assert eventType != null;
+                        //获取方法的Class
                         Class methodClass = eventType.methodClass();
-                        //获取事件方法
+                        //获取方法名
                         String methodName = eventType.methodName();
                         //设置访问权限
                         method.setAccessible(true);

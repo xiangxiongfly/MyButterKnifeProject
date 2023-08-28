@@ -9,6 +9,9 @@ import java.lang.annotation.Target;
 
 import androidx.annotation.IdRes;
 
+/**
+ * 绑定点击事件
+ */
 @Target(ElementType.METHOD)
 @Retention(RetentionPolicy.RUNTIME)
 @EventType(methodClass = View.OnClickListener.class, methodName = "setOnClickListener")

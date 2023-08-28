@@ -7,6 +7,9 @@ import java.lang.annotation.Target;
 
 import androidx.annotation.IdRes;
 
+/**
+ * 用于绑定元素
+ */
 @Retention(RetentionPolicy.RUNTIME)
 @Target(ElementType.FIELD)
 public @interface BindView {
